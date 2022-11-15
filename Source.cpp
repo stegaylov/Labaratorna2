@@ -8,19 +8,27 @@ int main() {
 	SetConsoleCP(1251);
 	SetConsoleOutputCP(1251);
 
-	char name[20];
-	char age[5];
-	char learning[100];
+	float a(10);
+	float b(10);
+	float c(10);
+	float d(10);
+	float x(10);
 
-	cout << "Як вас звати?: " << endl;
-	cin.getline(name, 20);
-	cout << "Скільки вам років?: " << endl;
-	cin.getline(age, 5);
-	cout << "Де ви навчаєтеся?:" << endl;
-	cin.getline(learning, 100);
-	cout << "Доброго дня, " << name << endl;
-	cout << "ВітаємоВас, Вам усього " << age << " а Ви вже ведете діалог з комп’ютером!" << learning << " буде пишатися Вами!" << endl;
- 
+	cout << "Введіть чотири різних цифри: " << endl;
+	cout << "A: ";
+	cin >> a;
+	cout << "B: ";
+	cin >> b;
+	cout << "C: ";
+	cin >> c;
+	cout << "D: ";
+	cin >> d;
+	cout << "Тепер змінимо їх місцями: " << endl;
+	x = d; d = c; c = b; b = a; a = x;
+	cout << "A: " << a << endl;
+	cout << "B: " << b << endl;
+	cout << "C: " << c << endl;
+	cout << "D: " << d << endl;
 
 
 }
